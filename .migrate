@@ -1,0 +1,13 @@
+{
+  "lastRun": "1682795532835-rename-name-column.js",
+  "migrations": [
+    {
+      "title": "1682795532835-rename-name-column.js",
+      "timestamp": 1682874025175
+    },
+    {
+      "title": "1682797035581-rename-name.js",
+      "timestamp": null
+    }
+  ]
+}
