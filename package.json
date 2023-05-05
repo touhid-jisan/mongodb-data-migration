@@ -4,7 +4,7 @@
   "description": "Sample migration script",
   "main": "server.js",
   "scripts": {
-    "test": "npm test"
+    "test": "mocha testOne.js"
   },
   "repository": {
     "type": "git",

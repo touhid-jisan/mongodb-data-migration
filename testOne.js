@@ -2,8 +2,8 @@ const { MongoClient } = require('mongodb');
 const assert = require('assert');
 
 // Import the migration scripts
-const createTables = require('./migrations/1683312643123-create-tablejs.js');
-// const createRelationships = require('migrations/1683312643123-create-tablejs.js');
+const createTables = require('.//migrations/1683315386675-create-table.js');
+// const createRelationships = require('./migrations/1683315386675-create-table.js');
 
 describe('Migration Tests', () => {
   let client;
@@ -27,11 +27,11 @@ describe('Migration Tests', () => {
       await createTables.up(db);
       const collections = await db.listCollections().toArray();
       const collectionNames = collections.map((collection) => collection.name);
-      assert.deepStrictEqual(collectionNames, ['users', 'orders', 'order_items', 'products']);
+      assert.deepStrictEqual(collectionNames, ['users', 'orders', 'products', 'order_items']);
     });
   });
 
-  // Test the createRelationships migration
+  // // Test the createRelationships migration
   // describe('createRelationships', () => {
   //   it('should create the relationships between the tables in the database', async () => {
   //     await createRelationships.up(db);
