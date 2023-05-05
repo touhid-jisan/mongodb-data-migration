@@ -2,16 +2,8 @@
   "lastRun": "1683315386675-create-table.js",
   "migrations": [
     {
-      "title": "1682795532835-rename-name-column.js",
-      "timestamp": 1683315800651
-    },
-    {
-      "title": "1682797035581-rename-name.js",
-      "timestamp": 1683315800713
-    },
-    {
       "title": "1683315386675-create-table.js",
-      "timestamp": 1683315859108
+      "timestamp": 1683317522809
     }
   ]
 }
