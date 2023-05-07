@@ -2,7 +2,7 @@ const { MongoClient } = require('mongodb');
 const assert = require('assert');
 
 // Import the migration scripts
-const createTables = require('.//migrations/1683315386675-create-table.js');
+const createTables = require('./migrations/1683320937267-create-table.js');
 // const createRelationships = require('./migrations/1683315386675-create-table.js');
 
 describe('Migration Tests', () => {
@@ -27,7 +27,7 @@ describe('Migration Tests', () => {
       await createTables.up(db);
       const collections = await db.listCollections().toArray();
       const collectionNames = collections.map((collection) => collection.name);
-      assert.deepStrictEqual(collectionNames, ['users', 'orders', 'products', 'order_items']);
+      assert.deepStrictEqual(collectionNames, ["users", "orders", "products", "order_items"]);
     });
   });
 
