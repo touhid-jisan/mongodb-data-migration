@@ -30,31 +30,4 @@ describe('Migration Tests', () => {
       assert.deepStrictEqual(collectionNames, ["users", "orders", "products", "order_items"]);
     });
   });
-
-  // // Test the createRelationships migration
-  // describe('createRelationships', () => {
-  //   it('should create the relationships between the tables in the database', async () => {
-  //     await createRelationships.up(db);
-  //     const users = db.collection('users');
-  //     const orders = db.collection('orders');
-  //     const orderItems = db.collection('order_items');
-  //     const products = db.collection('products');
-  //     const indexes = await Promise.all([
-  //       users.indexes(),
-  //       orders.indexes(),
-  //       orderItems.indexes(),
-  //       products.indexes(),
-  //     ]);
-  //     const expectedIndexes = [
-  //       ['_id_', 'email_1'],
-  //       ['_id_', 'user_id_1'],
-  //       ['_id_', 'order_id_1'],
-  //       ['_id_', 'product_id_1'],
-  //     ];
-  //     indexes.forEach((index, i) => {
-  //       const actualIndexes = index.map(({ key }) => Object.keys(key));
-  //       assert.deepStrictEqual(actualIndexes, expectedIndexes[i]);
-  //     });
-  //   });
-  // });
 });

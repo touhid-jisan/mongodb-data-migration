@@ -81,7 +81,6 @@ module.exports = {
       await db.createCollection(orderSchema.name, { validator: orderSchema.validator });
       await db.createCollection(productSchema.name, { validator: productSchema.validator });
 
-      // Add the relationships between tables
       await db.collection(orderSchema.name).createIndex({ user_id: 1 });
       await db.collection(orderSchema.name).createIndex({ products: 1 });
       await db.collection(orderItemSchema.name).createIndex({ order_id: 1 });

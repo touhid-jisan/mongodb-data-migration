@@ -1,6 +1,6 @@
 const { MongoClient } = require('mongodb');
 const url = 'mongodb://localhost:27017';
-const dbName = 'myDatabase';
+const dbName = 'CSE416';
 
 exports.up = function (done) {
   MongoClient.connect(url, { useUnifiedTopology: true }, function (err, client) {

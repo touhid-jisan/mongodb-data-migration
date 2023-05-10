@@ -2,16 +2,24 @@
   "lastRun": "1683481148059-order-product.js",
   "migrations": [
     {
+      "title": "1683320544895-create-database.js",
+      "timestamp": 1683741376391
+    },
+    {
+      "title": "1683320937267-create-table.js",
+      "timestamp": 1683741376497
+    },
+    {
       "title": "1683478583382-create-users.js",
-      "timestamp": 1683482243039
+      "timestamp": 1683741376530
     },
     {
       "title": "1683480422942-create-products.js",
-      "timestamp": 1683482243059
+      "timestamp": 1683741376560
     },
     {
       "title": "1683481148059-order-product.js",
-      "timestamp": 1683482243101
+      "timestamp": 1683741376609
     }
   ]
 }

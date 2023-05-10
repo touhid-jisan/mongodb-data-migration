@@ -24,7 +24,7 @@ module.exports = {
 
       // Find the logged-in user
       const userCollection = db.collection('users');
-      const loggedInUser = await userCollection.findOne({ email: 'akif@gmail.com' });
+      const loggedInUser = await userCollection.findOne({ email: 'akif@gmail.com'});
       console.log(loggedInUser);
       // Create a new order for the logged-in user
       const orderCollection = db.collection('orders');
